@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<style>
+    .main {
+        display:flex
+        width:100%
+    }
+</style>
+<body>
+
+{%for product in products%}
+<div class="main">
+    <h1>{{product.title}}</h1>
+    <h1>{{product.price}} $</h1>
+    <img class="img-fluid" src="{{product.image.url}}" alt="">
+    <button > Add to Favorites</button>
+    <i class="fa-solid fa-heart"></i>
+
+
+</div>
+
+{%endfor%}
+</body>
+</html>
